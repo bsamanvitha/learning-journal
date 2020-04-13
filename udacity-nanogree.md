@@ -11,3 +11,8 @@
 
 ## April 11: 
 - RNN Keras lab to decode ciphertext
+
+## April 12:
+- Keras and hyperparameters 
+- Keras sequential vs. functional
+- Machine translation overview
