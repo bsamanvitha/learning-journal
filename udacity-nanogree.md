@@ -16,3 +16,8 @@
 - Keras and hyperparameters 
 - Keras sequential vs. functional
 - Machine translation overview
+
+## April 13:
+- RNN embedding using GPU
+- RNN Bidirectional wrapping
+- combination of above two
