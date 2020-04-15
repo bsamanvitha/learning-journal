@@ -21,3 +21,6 @@
 - RNN embedding using GPU
 - RNN Bidirectional wrapping
 - combination of above two
+
+### April 14:
+- RNN encoder-decoder
