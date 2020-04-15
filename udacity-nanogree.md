@@ -24,3 +24,6 @@
 
 ### April 14:
 - RNN encoder-decoder
+
+### April 15:
+- RNN encoder-decoder model with bidirectional layer and embedding
