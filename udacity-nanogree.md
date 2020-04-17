@@ -28,3 +28,9 @@
 ### April 15:
 - RNN encoder-decoder model with bidirectional layer and embedding
 - stack bidirectional layer, experiment with learning rate, batch size, epochs to get high val-acc
+- automatic speech recognition systems overview
+
+### April 16:
+- fast fourier transformation
+- feature extraction
+- phonetics
