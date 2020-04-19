@@ -34,3 +34,11 @@
 - fast fourier transformation
 - feature extraction
 - phonetics
+
+### April 17:
+
+### April 18:
+- HMM acoustic model
+- RNN Connectionist Temporal Classification
+- N-grams
+- how CTC loss function works
