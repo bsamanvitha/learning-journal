@@ -42,3 +42,7 @@
 - RNN Connectionist Temporal Classification
 - N-grams
 - how CTC loss function works
+
+### April 19:
+- explored LibriSpeech dataset
+- use SonicVisualizer and pysoundfile to create own  dataset for speech recognition
