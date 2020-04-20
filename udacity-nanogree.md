@@ -46,3 +46,7 @@
 ### April 19:
 - explored LibriSpeech dataset
 - use SonicVisualizer and pysoundfile to create own  dataset for speech recognition
+
+### April 20
+- TimeDistributed 
+- Batch Normalization
