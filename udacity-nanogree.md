@@ -50,3 +50,8 @@
 ### April 20
 - TimeDistributed 
 - Batch Normalization
+
+### April 21
+- Conv1D
+- Bidirectional and bid
+- tuning parameters
