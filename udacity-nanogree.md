@@ -53,5 +53,5 @@
 
 ### April 21
 - Conv1D
-- Bidirectional and bid
+- Bidirectional and bid deep
 - tuning parameters
