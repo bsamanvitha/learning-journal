@@ -16,3 +16,8 @@
 #### May 7:
 - Recursion
 - Trees
+
+#### May 18:
+- Trees
+- Maps
+- 7 steps to coding question
