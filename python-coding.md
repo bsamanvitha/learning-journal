@@ -24,3 +24,6 @@
 
 #### May 19:
 - Maps
+
+#### May 25:
+- Greedy algorithm
