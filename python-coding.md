@@ -30,3 +30,6 @@
 
 #### May 27:
 - Graph algorithm
+
+#### May 31:
+- Heaps: insert
