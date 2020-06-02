@@ -33,3 +33,6 @@
 
 #### May 31:
 - Heaps: insert
+
+#### June 1:
+- Heaps: remove
