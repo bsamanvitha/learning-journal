@@ -39,3 +39,6 @@
 
 #### June 2:
 - Bubble sort
+
+#### June 3:
+- Merge sort
