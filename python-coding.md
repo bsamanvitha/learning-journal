@@ -36,3 +36,6 @@
 
 #### June 1:
 - Heaps: remove
+
+#### June 2:
+- Bubble sort
