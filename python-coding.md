@@ -42,3 +42,6 @@
 
 #### June 3:
 - Merge sort
+
+#### June 4:
+- Dynamic Programming theory
