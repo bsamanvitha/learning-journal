@@ -45,3 +45,6 @@
 
 #### June 4:
 - Dynamic Programming theory
+
+### June 7:
+- Dynamic Programming
