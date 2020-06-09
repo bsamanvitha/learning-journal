@@ -3,3 +3,6 @@
 
 #### May 29:
 - PyTorch intro
+
+#### June 8:
+- PyTorch
