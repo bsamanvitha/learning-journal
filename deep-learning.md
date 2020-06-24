@@ -6,3 +6,6 @@
 
 #### June 8:
 - PyTorch
+
+#### June 23:
+- Word embeddings
