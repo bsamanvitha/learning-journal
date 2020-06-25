@@ -9,3 +9,6 @@
 
 #### June 23:
 - Word embeddings
+
+#### June 24:
+- Word embeddings and skip-gram model 
