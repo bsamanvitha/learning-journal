@@ -16,3 +16,6 @@
 #### June 25:
 - LSTMs in PyTorch
 - Character-level RNN in PyTorch -> predict the next character and generate sequence of text
+
+#### June 26:
+- RNN sentiment analysis
