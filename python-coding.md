@@ -48,3 +48,6 @@
 
 ### June 7:
 - Dynamic Programming
+
+### July 7:
+- I learned how nested fod loops can be avoided by looping from left then right and precomputing values
