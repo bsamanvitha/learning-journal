@@ -50,4 +50,7 @@
 - Dynamic Programming
 
 ### July 7:
-- I learned how nested fod loops can be avoided by looping from left then right and precomputing values
+- learned how nested fod loops can be avoided by looping from left then right and precomputing values
+
+#### July 8:
+-  practiced arrays and scheduling, implemented flattening a list for scheduling
