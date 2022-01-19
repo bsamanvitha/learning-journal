@@ -4,3 +4,6 @@
 
 ### Jan 11, 2022:
 - did a quick 2-min review of colors and l'article indefini dans les phrases negatives
+
+### Jan 18, 2022:
+- adjectives
