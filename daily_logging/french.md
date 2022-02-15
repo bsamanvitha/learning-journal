@@ -7,3 +7,6 @@
 
 ### Jan 18, 2022:
 - adjectives
+
+### Feb 14, 2022:
+- verbs and conjugation
