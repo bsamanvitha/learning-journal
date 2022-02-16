@@ -10,3 +10,6 @@
 
 ### Feb 14, 2022:
 - verbs and conjugation
+
+### Feb 15, 2022:
+- les adjectifs possesifs et l'adjectif demonstratif
