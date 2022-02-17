@@ -13,3 +13,6 @@
 
 ### Feb 15, 2022:
 - les adjectifs possesifs et l'adjectif demonstratif
+
+### Feb 16, 2022
+- l'adjectif interrogatif et le passe compose des verbes en -er
