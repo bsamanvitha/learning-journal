@@ -16,3 +16,6 @@
 
 ### Feb 16, 2022
 - l'adjectif interrogatif et le passe compose des verbes en -er
+
+### Feb 17, 2022
+- la nourriture
