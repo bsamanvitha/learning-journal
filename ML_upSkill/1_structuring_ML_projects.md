@@ -40,3 +40,10 @@
     - set up dev/test set and metrics
     - build initial system quickly
     - use bias/variance analysis and error analysis to prioritize next steps
+ 
+**Mismatched Training and Dev/Test Set**
+- if sets are coming from different sources, a few ideas: random shuffle, partition
+- training-dev set
+- if the data (quality/distribution) in the training set is different from the data in the dev set, and if the dev error is a lot more than training error, it’s important to know if it’s a variance problem or if the data in the dev set is just different
+- solution for the above = training-dev set: same distribution as training set, but not used for training 
+
