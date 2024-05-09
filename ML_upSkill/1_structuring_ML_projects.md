@@ -46,4 +46,18 @@
 - training-dev set
 - if the data (quality/distribution) in the training set is different from the data in the dev set, and if the dev error is a lot more than training error, it’s important to know if it’s a variance problem or if the data in the dev set is just different
 - solution for the above = training-dev set: same distribution as training set, but not used for training 
+- The type, the error, and what it indicates wrt improving performance:
+<img width="411" alt="Screen Shot 2024-05-08 at 8 55 45 AM" src="https://github.com/bsamanvitha/learning-journal/assets/6962922/5010479e-4786-4dfb-b4a8-fec5b3b7c805">
 
+**Learning from Multiple Tasks**
+- Transfer Learning: to take knowledge the neural network has learned from one task and apply that knowledge to a separate task. Works:
+    - when transferring problem with a lot of data to a problem with relatively little data
+    - when both the tasks have the same input x
+    - when low-level features from A could be helpful for learning B
+- Multi-task Learning: one neural network do several things at the same time. Example: a image with car, stop sign, traffic lights detection (simplified autonomous driving example), i.e., predicting multiple outputs. Makes sense when there is:
+    - shared low-level features
+    - similar amount of data
+    - big enough neural network to train
+
+**End-to-end Deep Learning**
+- example: input audio, output transcript
