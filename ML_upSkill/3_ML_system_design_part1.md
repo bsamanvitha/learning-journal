@@ -49,3 +49,22 @@
    - Adtech and recommendation/personalization: important to retrain models to capture changes in user's behavior and trending topics
    - need to run fast and scale well with big data
 
+**Inference**
+- inference is the process of using a trained machine learning model to make a prediction
+1. Imbalance workload
+    - split workloads onto multiple inference servers, send it to workers in the pool, pick workers through an algorithm (Round Robin, etc.)
+    - serving logics and multiple models: combine multiple models in inference, route to a different model to get score
+3. Non-stationary problem
+    - based on how frequently the model performance degrades, we can decide how often it needs to be retrained or updated.
+4. Exploration vs. exploitation: Thompson Sampling
+    - tradeoff: exploring means to experiment, take risks but it can result in too few Ad conversation, hurting revenue; exploitation means to take the guaranteed reward path, but it may not be the best reward. One common technique for this is Thompson Sampling
+
+**Metrics Evaluation**
+- measure model performance in both online and offline environments
+1. Offline metrics
+   - logloss, MAE (Mean Absolute Error), R2
+2. Online metrics
+   - evaluate on certain pre-defined metrics and business metrics, then replace the current prod models with new models
+
+
+
