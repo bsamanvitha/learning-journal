@@ -58,21 +58,20 @@ Developing in a silo
 - communicate regularly with SMEs
 
 Not treating for imbalance sampling
+- disproportional distribution
+- imblearn package
+- techniques: random oversampling for minority class, SMOTE, random undersampling for majority class
 
+Interpreting your coefficients without properly treating for multicollinearity
+- multicollinearity is when one predictor variable in your regression model can be accurately predicted from the others
 
+Evaluating by accuracy alone
+- accuracy only tells a part of the picture
+- look at sensitivity/true positive rate and specificity/true negative rate
+- precision, recall, F1 score, AUC
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Giving overly technical presentations
+- use data viz instead of showing code/going line-by-line
+- make viz relevant and easy to read
+- lead with the result, not with the technicalities
+- speak to how your approach addresses the problem to be solved
