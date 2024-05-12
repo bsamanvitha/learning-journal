@@ -66,5 +66,38 @@
 2. Online metrics
    - evaluate on certain pre-defined metrics and business metrics, then replace the current prod models with new models
 
+## Video Recommendation
+**Problem Statement**
+- build a recommendation system for YouTube users
+- goal: maximize users' engagement and recommend new types of content
+
+**Metrics**
+- offline: reasonable precision, high recall, ranking loss, logloss
+- online: A/B testing to compare CTR, watch time, and conversion rates
+
+**Requirements**
+- training: train many times during the day as user behavior can be unpredictable and videos can become viral during the day
+- inference: latency needs to be ideally 100 ms (i.e., recommend 100 videos for every user when they visit the homepage), balance between exploration vs. exploitation (fresh new content vs. relevancy)
+
+**Modeling**
+1. Candidate generation model: finds the relevant videos based on user watch history
+    - feature engineering: each user has a list of video watched, minutes watched
+    - training data: use a time period like last 6 months to optimize accuracy and training time
+    - model: matrix factorization, collaborative algorithms (low-latency alternatives to collab filtering: Inverted Index, FAISS, Google ScaNN)
+2. Ranking model: optimized for the view likelihood
+    - feature engineering:
+          - watched video IDs -> video embedding
+          - past searches --> text embedding
+          - location --> geolocation embedding
+          - user-features --> normalization or standardization
+          - previous impression --> normalization or standardization
+          - time-related --> month, week, holiday, week, hour
+      - training data: 
+
+**Scaling**
+- multiple app servers and use load balancers to balance loads
+- multiple candidate generation services and ranking services
+- (Kubernetes Pod Autoscaler), Kube-proxy - candidate generation service can call ranking service directly, reducing latency even further
+
 
 
