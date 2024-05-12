@@ -24,3 +24,14 @@
     - Benefits: a way to reduce the increase in dimension and memory by allowing multiple values to be present/encoded as the same value
     - Feature hashing example: First, you chose the dimensionality of your feature vectors. Then, using a hash function, you convert all values of your categorical attribute (or all tokens in your collection of documents) into a number. Then you convert this number into an index of your feature vector.
     - Feature hashing in tech companies: If the hash size is too small, more collisions will happen and negatively affect model performance. On the other hand, the larger the hash size, the more it will consume memory.
+3. Crossed feature: usually used with a hashing trick to reduce high dimensions
+    - example: using crossed feature between user location and user job title for job recommendation model
+4. Embedding: transforming features from original space into a new space to support effective maching learning
+    - Benefits: captures semantic meaning of features, similar features will be close to each other in the embedding vector space
+    - Examples: store embedding where each store is one word, each user session is one sentence, and vectors for a consumer is achieved by summing the vectors for each store they ordered from in the past; account embedding to recommend relevant content (photos, videos, and stories) to users
+5. Numeric features:
+   - Normalization: make the mean equal 0, and the values be in the range [-1, 1] (or [0, 1] based on the usecase)
+   - Standardization: (feature value - mean of feature value) / (stdev of feature value)
+
+
+
