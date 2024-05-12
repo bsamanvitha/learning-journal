@@ -33,5 +33,19 @@
    - Normalization: make the mean equal 0, and the values be in the range [-1, 1] (or [0, 1] based on the usecase)
    - Standardization: (feature value - mean of feature value) / (stdev of feature value)
 
-
+**Training Pipeline**
+1. Data partitioning
+    - store data in a column-oriented format like Parquet or ORC via time partitioning for efficiency
+    - Parquet can reduce the data that is scanned by 99% and speed up the query times to be 30x faster
+2. Handle imbalance class distribution
+    - use class weights in loss function to penalize the majority class
+    - naive resampling (resample the majority class at a certain rate to reduce the imbalance)
+    - SMOTE: randomly picking a point from the minority class and computing the k-nearest neighbors for that point
+3. Choose the right loss function
+    - for binary classification: cross-entropy
+    - for CTR (click through rate): normalized cross entropy loss (logloss)
+    - for forecast: MAPE and SMAPE
+4. Retraining requirements
+   - Adtech and recommendation/personalization: important to retrain models to capture changes in user's behavior and trending topics
+   - need to run fast and scale well with big data
 
