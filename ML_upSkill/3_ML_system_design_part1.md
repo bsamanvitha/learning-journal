@@ -76,7 +76,7 @@
 - online: A/B testing to compare CTR, watch time, and conversion rates
 
 **Requirements**
-- training: train many times during the day as user behavior can be unpredictable and videos can become viral during the day
+- training: train many times during the day as user behavior can be unpredictable and videos can become viral during the day. Balance the operation cost vs. the online metrics improvement
 - inference: latency needs to be ideally 100 ms (i.e., recommend 100 videos for every user when they visit the homepage), balance between exploration vs. exploitation (fresh new content vs. relevancy)
 
 **Modeling**
@@ -92,12 +92,22 @@
           - user-features --> normalization or standardization
           - previous impression --> normalization or standardization
           - time-related --> month, week, holiday, week, hour
-      - training data: 
+    - training data: user watched history data
+    - model: fully connected neural network, sigmoid activation at the last layer (returns in the range [0, 1], can be used as probability), ReLU as an activation function for hidden layers, cross-entropy loss for loss function
+
+
 
 **Scaling**
 - multiple app servers and use load balancers to balance loads
 - multiple candidate generation services and ranking services
 - (Kubernetes Pod Autoscaler), Kube-proxy - candidate generation service can call ranking service directly, reducing latency even further
+
+
+
+
+
+
+
 
 
 
