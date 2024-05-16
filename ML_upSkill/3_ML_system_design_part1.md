@@ -95,7 +95,17 @@
     - training data: user watched history data
     - model: fully connected neural network, sigmoid activation at the last layer (returns in the range [0, 1], can be used as probability), ReLU as an activation function for hidden layers, cross-entropy loss for loss function
 
-
+**High-level system design**
+Assumptions:
+- videos views per month = 150 billion
+- 10% are from recommendations
+- homepage consists of 100 video recs for a user
+- on avg, user watches 2 out of 100 videos
+- total number of users = 1.3 billion
+- If users do not click or watch some video within a given time frame, i.e., 10 minutes, then it is a missed recommendation
+- data size: 15 billion positive labels and 750 billion negative labels
+- total size est. = 0.4 Petabytes
+- we can keep the last six months or one year of data in the data lake, and archive old data in cold storage
 
 **Scaling**
 - multiple app servers and use load balancers to balance loads
