@@ -96,6 +96,7 @@
     - model: fully connected neural network, sigmoid activation at the last layer (returns in the range [0, 1], can be used as probability), ReLU as an activation function for hidden layers, cross-entropy loss for loss function
 
 **High-level system design**
+
 Assumptions:
 - videos views per month = 150 billion
 - 10% are from recommendations
@@ -106,18 +107,9 @@ Assumptions:
 - data size: 15 billion positive labels and 750 billion negative labels
 - total size est. = 0.4 Petabytes
 - we can keep the last six months or one year of data in the data lake, and archive old data in cold storage
+![IMG_B19F63FB407A-1](https://github.com/bsamanvitha/learning-journal/assets/6962922/e4da4794-ac99-42b9-b0ee-90a9b7164d0a)
 
 **Scaling**
 - multiple app servers and use load balancers to balance loads
 - multiple candidate generation services and ranking services
 - (Kubernetes Pod Autoscaler), Kube-proxy - candidate generation service can call ranking service directly, reducing latency even further
-
-
-
-
-
-
-
-
-
-
