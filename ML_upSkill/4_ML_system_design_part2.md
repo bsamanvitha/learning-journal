@@ -134,6 +134,8 @@ flow:
 - Ads Ranking service gets feature values from Feature Store, gets latest model
 - Ads Ranking Service scores ads and return ads with ranking to Ads Candidate Generation service. Ads Candidate Generation service returns result to Application server and client
 
+![IMG_3546F5B5B2D0-1](https://github.com/bsamanvitha/learning-journal/assets/6962922/1d39435f-e76d-4c1b-a4cd-0087610c292d)
+
 With scale:
 - User visits the homepage and sends an Ad request to the Candidate Generation Service. Candidate Generation Service generates a list of Ads Candidates and sends them to the Aggregator Service
 - The Aggregator Service splits the list of candidates and sends it to the Ad Ranking workers to score
