@@ -87,6 +87,26 @@ Build a model to estimate the total delivery time given order details, market co
 
 **Modeling**
 
+Feature engineering
+- order features
+- item features
+- order type
+- merchant details
+- realtime feature
+- time feature
+- similarity
+- latitude/longitude
+
+Training data
+- historical deliveries: delivery data and actual total delivery time, store data, order data, customers data, location, parking data
+- time-period of last 6 months
+
+Model
+- Gradient Boost Decision Tree
+    - calculate baseline
+    - measure residual error between prediction and actual delivery time
+    - every leaf will contain a prediction for residual values
+    - EDT = avg. delivery time + learning rate * residuals
 
 **High-level system design**
 
