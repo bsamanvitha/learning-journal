@@ -2,6 +2,7 @@
 ## Rental Search Ranking
 
 **Problem Statement**
+
 Airbnb users search for available homes at a particular location. We can build a supervised ML model to predict booking likelihood. This is a binary classification model, i.e., classify booking and not-booking. (note: the naive approach is using text similarity and ranking function, but similarity doesn’t guarantee a booking)
 
 **Metrics**
@@ -67,3 +68,43 @@ flow:
 - scale out Search Services and Ranking Services to handle millions of requests from the Application Server
 - log all candidates that we recommended as training data, so the Search Service needs to send logs to a cloud storage or send a message to a Kafka cluster
 
+## Estimate Food Delivery Time
+
+**Problem Statement**
+
+Build a model to estimate the total delivery time given order details, market conditions, and traffic status
+
+**Metrics**
+- Root Mean Squared Error
+- A/B testing, customer engagement, customer retention
+
+**Requirements**
+
+- retraining every few hours
+- large amount of data, organize data in Parquet files
+- changes in delivery, the model runs a new estimate and sends an update to the customer
+- latency from 100ms to 200ms
+
+**Modeling**
+
+
+**High-level system design**
+
+- 2 million MAU
+- each delivery 500 bytes
+- total = 500 * 2 * 10^6 = 10^9 = 1 GB
+
+![IMG_DB1C9ED4F101-1](https://github.com/bsamanvitha/learning-journal/assets/6962922/3b3473e2-a387-4714-a031-f6df60a78f60)
+
+flow:
+- User visits a homepage, checks their food orders, and requests ET of delivery
+- Application Server sends the requests to the Estimate Delivery Time Service
+- EDT service loads the latest ML model from Model Storage and gets all the feature values from the Feature Store. 
+    - Uses the ML model to predict delivery time and return results to the Application Server
+- Restaurant send status to Status Service
+- Status Service updates the order status
+- Notif. service subscribed to the message queue and receives latest order status
+
+**Scaling**
+- use a Load Balancer to balance loads across Application Servers
+- leverage streaming process systems like Kafka to handle notifications as well as model predictions
